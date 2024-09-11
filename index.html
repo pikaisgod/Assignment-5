@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Board</title>
+  <link rel="stylesheet" href="assets/css/board.css">
+</head>
+<body>
+
+  <header>
+    <h1>Project Task Board</h1>
+    <button id="add-task-btn">Add Task</button>
+  </header>
+
+  <main class="task-board">
+    <div class="column" id="not-started">
+      <h2>Not Yet Started</h2>
+      <div class="task-list" data-status="not-started"></div>
+    </div>
+    <div class="column" id="in-progress">
+      <h2>In Progress</h2>
+      <div class="task-list" data-status="in-progress"></div>
+    </div>
+    <div class="column" id="completed">
+      <h2>Completed</h2>
+      <div class="task-list" data-status="completed"></div>
+    </div>
+  </main>
+
+  <!-- Modal for Adding Tasks -->
+  <div id="task-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>New Task</h2>
+      <form id="task-form">
+        <label for="task-title">Title</label>
+        <input type="text" id="task-title" required>
+
+        <label for="task-desc">Description</label>
+        <textarea id="task-desc" required></textarea>
+
+        <label for="task-deadline">Deadline</label>
+        <input type="date" id="task-deadline" required>
+
+        <button type="submit" id="save-task-btn">Save Task</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/board.js"></script>
+</body>
+</html>

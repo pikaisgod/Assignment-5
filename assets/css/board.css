@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .task-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .column {
+    width: 30%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .column h2 {
+    text-align: center;
+  }
+  
+  .task-list {
+    min-height: 300px;
+  }
+  
+  .task {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .task.overdue {
+    background-color: #f8d7da;
+  }
+  
+  .task.near-deadline {
+    background-color: #fff3cd;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10% auto;
+    width: 40%;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
